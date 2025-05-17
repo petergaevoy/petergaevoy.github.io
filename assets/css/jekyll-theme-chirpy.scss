@@ -1,8 +1,10 @@
 ---
 ---
 
+/* prettier-ignore */
 @use 'main';
-{%- if jekyll.environment == ' production ' -%}
+
+{%- if jekyll.environment == 'production' -%}
   .bundle
 {%- endif -%}
 ';
@@ -58,14 +60,5 @@
   background: linear-gradient(135deg, #ff6ec4, #7873f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-}
-
-%link-hover {
-  display: inline-block;
-  background: linear-gradient(135deg, #ffb6c1, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
   transition: all 0.3s ease-in-out;
 }
