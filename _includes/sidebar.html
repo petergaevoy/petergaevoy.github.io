@@ -96,9 +96,6 @@
         <i class="fas fa-adjust"></i>
       </button>
 
-      {% if site.data.contact.size > 0 %}
-        <span class="icon-border"></span>
-      {% endif %}
     {% endunless %}
 
     {% for entry in site.data.contact %}
@@ -112,8 +109,8 @@
           {%- capture url -%}
             javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
           {%- endcapture -%}
-        {% when 'rss' %}
-          {% assign url = '/feed.xml' | relative_url %}
+        {% when 'telegram' %}
+          {% assign url = 'https://t.me/petergaevoy' %}
         {% else %}
           {% assign url = entry.url %}
       {% endcase %}
