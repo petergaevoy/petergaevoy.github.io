@@ -8,4 +8,20 @@
 {%- endif -%}
 ';
 
-/* append your custom style below */
+// custom avatar settings
+
+.profile-wrapper #avatar {
+  width: 175px !important;
+  height: 175px !important;
+  animation: disable !important;
+}
+
+#avatar:hover img {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+
+.site-title {
+  transition: font-family 0.4s ease, color 0.4s ease;
+}
