@@ -1,18 +1,80 @@
 <!-- The Side Bar -->
 
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+    const path = window.location.pathname;
+    if (path !== "/about/") return;
+
+    const fonts = [
+      "'Roboto', sans-serif",
+      "'Playfair Display', serif",
+      "Arial, sans-serif",
+      "Georgia, serif"
+    ];
+
+    const colors = [
+      "#FFC0CB", // pastel pink
+      "#B0E0E6", // pastel blue
+      "#E6E6FA", // lavender
+      "#F5DEB3", // wheat
+      "#D8BFD8", // thistle
+      "#C3FDB8", // mint
+      "#FADADD"  // pastel rose
+    ];
+
+    const names = [
+      "Peter Gaevoy",
+      "Marco Pagot",
+      "Oz Scarecrow",
+      "Turnip Head",
+      "Fujimoto Sea",
+    ];
+
+    const titleEl = document.querySelector(".site-title");
+
+    if (!titleEl) return;
+
+    let intervalId;
+    const animationDuration = 2000;
+    const frameRate = 125; 
+
+    intervalId = setInterval(() => {
+      const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      const randomName = names[Math.floor(Math.random() * names.length)];
+      titleEl.style.fontFamily = randomFont;
+      titleEl.style.color = randomColor;
+      titleEl.textContent = randomName;
+    }, frameRate);
+
+    setTimeout(() => {
+      clearInterval(intervalId);
+      // Final style, but fixed name
+      const finalFont = fonts[Math.floor(Math.random() * fonts.length)];
+      const finalColor = colors[Math.floor(Math.random() * colors.length)];
+      titleEl.style.fontFamily = finalFont;
+      titleEl.style.color = colors[2];
+      titleEl.textContent = names[0];
+    }, animationDuration);
+  });
+</script>
+
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
+  {% if page.url == '/about/' %}
     <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
       {%- if site.avatar != empty and site.avatar -%}
         {%- capture avatar_url -%}
           {% include media-url.html src=site.avatar %}
         {%- endcapture -%}
-        <img src="{{- avatar_url -}}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+        <img src="{{- avatar_url -}}" width="175" height="175" alt="avatar" onerror="this.style.display='none'">
       {%- endif -%}
     </a>
+    {% endif %}
 
     <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+    <p class="site-subtitle mb-0">{{ site.tagline }}</p>
   </header>
   <!-- .profile-wrapper -->
 
