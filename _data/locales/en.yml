@@ -37,13 +37,12 @@ copyright:
   # Displayed in the footer
   brief: Some rights reserved.
   verbose: >-
-    Except where otherwise noted, the blog posts on this site are licensed
-    under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author.
+    Be my guest and share this page. No worries.
 
-meta: Using the :THEME theme for :PLATFORM.
+meta: Based on :THEME and customized by me.
 
 not_found:
-  statement: Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
+  statement: Better luck next time
 
 notification:
   update_found: A new version of content is available.

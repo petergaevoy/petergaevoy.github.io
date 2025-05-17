@@ -1,9 +1,8 @@
 ---
 ---
 
-/* prettier-ignore */
-@use 'main
-{%- if jekyll.environment == 'production' -%}
+@use 'main';
+{%- if jekyll.environment == ' production ' -%}
   .bundle
 {%- endif -%}
 ';
@@ -24,4 +23,49 @@
 
 .site-title {
   transition: font-family 0.4s ease, color 0.4s ease;
+}
+
+#topbar {
+  margin-top: 1.5rem;
+}
+
+.sidebar-bottom a {
+  margin-right: 0.7rem;
+}
+
+#mode-toggle {
+  margin-right: 1rem;
+}
+
+.sidebar-bottom a:last-child {
+  margin-right: 0;
+}
+
+.post-tags .post-tag {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.post-tags .post-tag:hover {
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tag:hover,
+.post-tag:hover {
+  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+%link-hover {
+  display: inline-block;
+  background: linear-gradient(135deg, #ffb6c1, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition: all 0.3s ease-in-out;
 }
