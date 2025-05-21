@@ -22,6 +22,8 @@
   transform: none !important;
 }
 
+// Page content custom display settings
+
 .site-title {
   transition: font-family 0.4s ease, color 0.4s ease;
 }
@@ -42,22 +44,36 @@
   margin-right: 0;
 }
 
-.post-tags .post-tag {
-  color: inherit;
+// Tags and links custom styling
+
+#page-category a:hover,
+#page-tag a:hover,
+#access-lastmod a:hover,
+.post-tail-wrapper .license-wrapper > a:hover,
+.post-tags .post-tag:hover,
+#search-results a:hover,
+footer a:hover,
+#topbar #breadcrumb a:hover,
+.post-meta a:not([class]):hover,
+.content a:not(.img-link):hover {
+  background: linear-gradient(30deg, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid #c471a1;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
-.post-tags .post-tag:hover {
-  background: linear-gradient(135deg, #ff6ec4, #7873f5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.btn.btn-outline-primary:not(.disabled):hover {
+  border-color: #c471a1 !important;
 }
 
 .tag:hover,
 .post-tag:hover {
-  background: linear-gradient(135deg, #ff6ec4, #7873f5);
+  background: linear-gradient(30deg, #ff6ec4, #7873f5);
   -webkit-background-clip: text;
+  background-color: #00000000;
+  border: 1px solid #c471a1;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
 }
