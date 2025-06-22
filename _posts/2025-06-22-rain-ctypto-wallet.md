@@ -1,6 +1,6 @@
 ---
 title: "DIY crypto wallet out of rain drops ☔️"
-date: "2025-06-22 00:11:11"
+date: "2025-06-21 00:11:11"
 categories: [web3]
 tags: [web3, diy, nature]
 image:
