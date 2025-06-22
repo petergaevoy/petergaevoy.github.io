@@ -63,5 +63,5 @@ console.log("🧠 Mnemonic:", mnemonic);
 ```
 <b>Feel free to create your own unique wallet using the guide and code above — it’s also [available on my GitHub](https://github.com/petergaevoy/rain-wallet).</b>
 
-> <b>NO NEED TO WAIT FOR RAIN:</b> Grab a coloring brush and <b>splash</b> some <b style="color:#F8C8DC">c</b><b style="color:#AED9E0">o</b><b style="color:#B8E0D2">l</b><b style="color:#FFF5BA">o</b><b style="color:#D6E2D6">r</b> onto white paper — random splashes guaranteed 🤝🏼  
+> <b>NO NEED TO WAIT FOR RAIN:</b><br>Grab a coloring brush and <b>splash</b> some <b style="color:#F8C8DC">c</b><b style="color:#AED9E0">o</b><b style="color:#B8E0D2">l</b><b style="color:#FFF5BA">o</b><b style="color:#D6E2D6">r</b> onto white paper — random splashes guaranteed 🤝🏼  
 {: .prompt-tip }
