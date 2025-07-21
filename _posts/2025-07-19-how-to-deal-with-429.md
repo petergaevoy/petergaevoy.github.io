@@ -117,5 +117,5 @@ const response = await requestWithRetryOn429(makeApiCall, 5, 500);
 - CI runs have become significantly **more stable**  
 - This is a **reusable** solution that addresses the `root cause`
 
-Ckeck out code repo here:
+Check out code repo here:
 : [**Playwright example project**](https://github.com/petergaevoy/playwright/tree/main)
