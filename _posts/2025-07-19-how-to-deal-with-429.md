@@ -2,7 +2,7 @@
 title: "How to deal with 429 in your tests 🧭"
 date: "2025-07-19 00:11:11"
 categories: [playwright]
-tags: [api, ci/cd, automation,]
+tags: [api, ci/cd, automation, playwright, testing]
 mermaid: true
 image:
   path: assets/img/429/notlikethis429.png
