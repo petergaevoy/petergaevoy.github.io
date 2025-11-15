@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Mint</title>
+    <link rel="stylesheet" href="/assets/meanmice/meanmice.css" />
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.1/dist/ethers.umd.min.js"></script>
+    <script src="/assets/meanmice/meanmice.js" defer></script>
+  </head>
+  <body>
+    <div id="walletPanel" class="wallet-hidden">
+      <div id="networkBubble" class="bubble">—</div>
+      <div id="walletBubble" class="bubble">—</div>
+      <button id="disconnectBtn" class="bubble disconnect">Disconnect</button>
+    </div>
+
+    <div id="app">
+      <h1>NFT Mint</h1>
+
+      <div id="controls">
+        <button id="connectBtn">Connect Wallet</button>
+        <button id="mintBtn" disabled>Mint (8 POL)</button>
+      </div>
+
+      <div id="status"></div>
+    </div>
+  </body>
+</html>
