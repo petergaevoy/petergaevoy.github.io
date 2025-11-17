@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mean Mice</title>
+    <link rel="icon" type="image/png" href="../assets/img/meanmice/fav.png" />
+    <link rel="stylesheet" href="/assets/meanmice/meanmice.css" />
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.13.1/dist/ethers.umd.min.js"></script>
+    <script src="/assets/meanmice/meanmice.js" defer></script>
+  </head>
+
+  <body>
+    <a id="backToBlog" href="/" class="back-bubble">🚪 Back to blog</a>
+    <div id="walletPanel" class="wallet-hidden">
+      <div id="networkBubble" class="bubble">—</div>
+      <div id="walletBubble" class="bubble">—</div>
+      <button id="disconnectBtn" class="bubble disconnect">Disconnect</button>
+    </div>
+
+    <div id="app">
+      <h1>GET YOUR MEAN MICE 🖼</h1>
+
+      <div id="controls">
+        <button id="connectBtn">Connect MetaMask 🦊</button>
+        <button id="mintBtn" class="hidden">Mint NFT (8 POL)</button>
+      </div>
+
+      <div id="status"></div>
+
+      <h2 style="margin-top: 40px" class="hidden">Your Minted NFTs</h2>
+      <div id="gallery" class="gallery"></div>
+    </div>
+
+    <!-- NFT MODAL -->
+    <div id="nftModal" class="modal hidden">
+      <div class="modal-content">
+        <button id="modalClose" class="modal-close">&times;</button>
+
+        <div class="modal-body">
+          <div class="modal-left">
+            <img id="modalImage" src="" />
+          </div>
+
+          <div class="modal-right">
+            <h3 id="modalName"></h3>
+            <p id="modalDesc" class="modal-description"></p>
+
+            <div id="modalAttrs" class="modal-attributes"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
